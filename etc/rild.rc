@@ -1,0 +1,28 @@
+service atcserver /system/bin/atc
+    class main
+    disabled
+
+    
+
+service ril-daemon1 /system/bin/rild -c 1
+    disabled
+    class core
+    socket rilds2 stream 660 root radio
+    socket rild-debug1 stream 660 radio system
+    socket rild-balong-test stream 660 radio system
+    user root
+    group radio cache inet misc audio sdcard_r sdcard_rw log
+
+on property:sys.userdata_is_ready=1
+    start ril-daemon0
+
+on property:rild.rild1_ready_to_start=true
+    start ril-daemon1
+    symlink /dev/socket/rilds2 /dev/socket/rild2
+#    start ril-daemon2
+
+on property:rild.rild1_ready_to_start=false
+    symlink /dev/socket/rildm2 /dev/socket/rild2
+
+on property:ro.hardware.alter=*
+write /proc/sys/kernel/hardware_alter ${ro.hardware.alter}
