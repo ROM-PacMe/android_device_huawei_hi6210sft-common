@@ -98,19 +98,10 @@ TARGET_OTA_ASSERT_DEVICE := hi6210sft,ALE-L21,hwALE,CHC-U03,chm-u01,chm-u03,CHM-
 ANDROID_COMPILE_WITH_JACK := true
 
 # Wifi
-BOARD_WLAN_DEVICE                := bcmdhd
-BOARD_WLAN_DEVICE_REV            := bcm4343s
-WPA_SUPPLICANT_VERSION           := VER_0_8_X
-BOARD_WPA_SUPPLICANT_DRIVER      := NL80211
-BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_bcmdhd
-BOARD_HOSTAPD_DRIVER             := NL80211
-BOARD_HOSTAPD_PRIVATE_LIB        := lib_driver_cmd_bcmdhd
-WIFI_DRIVER_FW_PATH_PARAM        := "/sys/module/bcmdhd/parameters/firmware_path"
-WIFI_DRIVER_FW_PATH_STA          := "/system/vendor/firmware/fw_bcm4343s_hw.bin"
-WIFI_DRIVER_FW_PATH_AP           := "/system/vendor/firmware/fw_bcm4343s_apsta_hw.bin"
-WIFI_DRIVER_MODULE_NAME          := "dhd"
-WIFI_DRIVER_MODULE_ARG           := "firmware_path=/system/vendor/firmware/fw_bcm4343s_hw.bin nvram_path=/system/vendor/firmware/nvram4343s_hw.txt"
-WIFI_DRIVER_MODULE_AP_ARG        := "firmware_path=/system/vendor/firmware/fw_bcm4343s_apsta_hw.bin nvram_path=/system/vendor/firmware/nvram4343s_hw.txt"
+BOARD_HOSTAPD_DRIVER := NL80211
+BOARD_WPA_SUPPLICANT_DRIVER := NL80211
+CONFIG_DRIVER_NL80211 := y
+WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # enable to use the CPUSETS feature
 ENABLE_CPUSETS := true
