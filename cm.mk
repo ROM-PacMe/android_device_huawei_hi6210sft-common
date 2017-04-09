@@ -24,21 +24,20 @@ $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 PRODUCT_NAME := cm_hi6210sft
 PRODUCT_DEVICE := hi6210sft
-PRODUCT_MANUFACTURER := HUAWEI
-PRODUCT_BRAND := Huawei
+PRODUCT_MANUFACTURER := Huawei
+PRODUCT_BRAND := HUAWEI
 PRODUCT_GMS_CLIENTID_BASE := android-huawei
-PRODUCT_RELEASE_NAME := Huawei G Play Mini
 #PRODUCT_PROPERTY_OVERRIDES += \
     ro.product.device=hwCHC \
     ro.product.model=CHC-U03 \
     ro.product.name=CHC-U03 \
-    ro.build.id=HuaweiCHC-U03
+    ro.build.id=HuaweiCherryMini
 
 TARGET_VENDOR_PRODUCT_NAME := CHC-U03
 TARGET_VENDOR_DEVICE_NAME := CHC-U03
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT="hi6210sft/hi6210sft/hi6210sft:6.0/MRA58K/jenkins06271131:user/test-keys" \
-    PRIVATE_BUILD_DESC="CHC-U03-user 6.0 HuaweiGPlayMini C432B575 release-keys" \
-    PRODUCT_MODEL="CHC-U03"
+    PRIVATE_BUILD_DESC="CHC-U03-user 6.0 HuaweiCHC-U03 C432B575 release-keys" \
+    PRODUCT_MODEL="Cherry Mini"
 

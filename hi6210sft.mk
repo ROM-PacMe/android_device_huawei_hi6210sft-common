@@ -10,4 +10,4 @@ $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 # Overrides
 PRODUCT_NAME := hi6210sft
 PRODUCT_DEVICE := hi6210sft
-PRODUCT_MODEL := G Play Mini
+PRODUCT_MODEL := Soul Project
