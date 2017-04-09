@@ -1,7 +1,7 @@
 #################################################################################
 #
-#				P8 Lite
-#			    Propietary Blobs
+#				Cherry Mini
+#			      Propietary Blobs
 #
 #################################################################################
 
@@ -22,7 +22,7 @@ PRODUCT_COPY_FILES += \
 		device/linaro/hi6210sft/rootdir/init.hi6210sft.usb.rc:root/init.hi6210sft.usb.rc \
 		device/linaro/hi6210sft/rootdir/sbin/oeminfo_nvm_server:root/sbin/oeminfo_nvm_server \
 		device/linaro/hi6210sft/rootdir/sbin/volisnotd:root/sbin/volisnotd \
-		device/linaro/hi6210sft/rootdir/sbin/teecd:root/sbin/teecd \
+		device/linaro/hi6210sft/rootdir/sbin/teecd:root/sbin/teecd
 
 #Audio Config
 PRODUCT_COPY_FILES += \
@@ -140,6 +140,7 @@ PRODUCT_COPY_FILES += \
 		vendor/hi6210sft/lib/libearpa.so:system/lib/libearpa.so \
 		vendor/hi6210sft/lib64/libearpa.so:system/lib64/libearpa.so
 
+
 #Camera
 PRODUCT_COPY_FILES += \
 		vendor/hi6210sft/lib/libjpegenchw.so:system/lib/libjpegenchw.so \
@@ -222,8 +223,125 @@ PRODUCT_COPY_FILES += \
 		vendor/hi6210sft/etc/srs/srsmodels.lic:system/etc/srs/srsmodels.lic \
 		vendor/hi6210sft/etc/srs/srs_processing.cfg:system/etc/srs/srs_processing.cfg \
 		vendor/hi6210sft/etc/srs/models.txt:system/etc/srs/models.txt \
-		vendor/hi6210sft/etc/hisi_omx.cfg:system/etc/hisi_omx.cfg
-
+		vendor/hi6210sft/etc/hisi_omx.cfg:system/etc/hisi_omx.cfg \
+        vendor/hi6210sft/etc/audio/algorithm/algorithm_ALICE_normal.xml:system/etc/audio/algorithm/algorithm_ALICE_normal.xml \
+		vendor/hi6210sft/etc/audio/algorithm/algorithm_ALICEPA_normal.xml:system/etc/audio/algorithm/algorithm_ALICEPA_normal.xml \
+		vendor/hi6210sft/etc/audio/algorithm/algorithm_CARMEL_normal.xml:system/etc/audio/algorithm/algorithm_CARMEL_normal.xml \
+		vendor/hi6210sft/etc/audio/algorithm/algorithm_CHERRYPLUS_normal.xml:system/etc/audio/algorithm/algorithm_CHERRYPLUS_normal.xml \
+		vendor/hi6210sft/etc/audio/algorithm/algorithm_CHERRYPLUSGLOBAL_normal.xml:system/etc/audio/algorithm/algorithm_CHERRYPLUSGLOBAL_normal.xml \
+		vendor/hi6210sft/etc/audio/algorithm/algorithm_CHERRYPRO_normal.xml:system/etc/audio/algorithm/algorithm_CHERRYPRO_normal.xml \
+		vendor/hi6210sft/etc/audio/algorithm/algorithm_hi3635_normal.xml:system/etc/audio/algorithm/algorithm_hi3635_normal.xml \
+		vendor/hi6210sft/etc/audio/algorithm/algorithm_SHINE_normal.xml:system/etc/audio/algorithm/algorithm_SHINE_normal.xml \
+		vendor/hi6210sft/etc/audio/algorithm/ascend_algorithm_ALICE.xml:system/etc/audio/algorithm/ascend_algorithm_ALICE.xml \
+		vendor/hi6210sft/etc/audio/algorithm/ascend_algorithm_default.xml:system/etc/audio/algorithm/ascend_algorithm_default.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_paths_ALICE.xml:system/etc/audio/codec/mixer_paths_ALICE.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_paths_ALICEPA.xml:system/etc/audio/codec/mixer_paths_ALICEPA.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_paths_CARMEL.xml:system/etc/audio/codec/mixer_paths_CARMEL.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_paths_CHERRYPLUS.xml:system/etc/audio/codec/mixer_paths_CHERRYPLUS.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_paths_CHERRYPLUSGLOBAL.xml:system/etc/audio/codec/mixer_paths_CHERRYPLUSGLOBAL.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_paths_CHERRYPRO.xml:system/etc/audio/codec/mixer_paths_CHERRYPRO.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_paths_default.xml:system/etc/audio/codec/mixer_paths_default.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_paths_SHINE.xml:system/etc/audio/codec/mixer_paths_SHINE.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_volumes_ALICE_ce.xml:system/etc/audio/codec/mixer_volumes_ALICE_ce.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_volumes_ALICE_cmcciot.xml:system/etc/audio/codec/mixer_volumes_ALICE_cmcciot.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_volumes_ALICE_normal.xml:system/etc/audio/codec/mixer_volumes_ALICE_normal.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_volumes_ALICE_telecomiot.xml:system/etc/audio/codec/mixer_volumes_ALICE_telecomiot.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_volumes_ALICE_unicomiot.xml:system/etc/audio/codec/mixer_volumes_ALICE_unicomiot.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_volumes_ALICEPA_ce.xml:system/etc/audio/codec/mixer_volumes_ALICEPA_ce.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_volumes_ALICEPA_cmcciot.xml:system/etc/audio/codec/mixer_volumes_ALICEPA_cmcciot.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_volumes_ALICEPA_normal.xml:system/etc/audio/codec/mixer_volumes_ALICEPA_normal.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_volumes_ALICEPA_telecomiot.xml:system/etc/audio/codec/mixer_volumes_ALICEPA_telecomiot.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_volumes_ALICEPA_unicomiot.xml:system/etc/audio/codec/mixer_volumes_ALICEPA_unicomiot.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_volumes_CARMEL_ce.xml:system/etc/audio/codec/mixer_volumes_CARMEL_ce.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_volumes_CARMEL_cmcciot.xml:system/etc/audio/codec/mixer_volumes_CARMEL_cmcciot.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_volumes_CARMEL_normal.xml:system/etc/audio/codec/mixer_volumes_CARMEL_normal.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_volumes_CARMEL_telecomiot.xml:system/etc/audio/codec/mixer_volumes_CARMEL_telecomiot.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_volumes_CARMEL_unicomiot.xml:system/etc/audio/codec/mixer_volumes_CARMEL_unicomiot.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_volumes_CHERRYPLUS_ce.xml:system/etc/audio/codec/mixer_volumes_CHERRYPLUS_ce.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_volumes_CHERRYPLUS_cmcciot.xml:system/etc/audio/codec/mixer_volumes_CHERRYPLUS_cmcciot.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_volumes_CHERRYPLUS_normal.xml:system/etc/audio/codec/mixer_volumes_CHERRYPLUS_normal.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_volumes_CHERRYPLUS_telecomiot.xml:system/etc/audio/codec/mixer_volumes_CHERRYPLUS_telecomiot.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_volumes_CHERRYPLUS_unicomiot.xml:system/etc/audio/codec/mixer_volumes_CHERRYPLUS_unicomiot.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_volumes_CHERRYPLUSGLOBAL_ce.xml:system/etc/audio/codec/mixer_volumes_CHERRYPLUSGLOBAL_ce.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_volumes_CHERRYPLUSGLOBAL_cmcciot.xml:system/etc/audio/codec/mixer_volumes_CHERRYPLUSGLOBAL_cmcciot.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_volumes_CHERRYPLUSGLOBAL_normal.xml:system/etc/audio/codec/mixer_volumes_CHERRYPLUSGLOBAL_normal.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_volumes_CHERRYPLUSGLOBAL_telecomiot.xml:system/etc/audio/codec/mixer_volumes_CHERRYPLUSGLOBAL_telecomiot.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_volumes_CHERRYPLUSGLOBAL_unicomiot.xml:system/etc/audio/codec/mixer_volumes_CHERRYPLUSGLOBAL_unicomiot.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_volumes_CHERRYPRO_ce.xml:system/etc/audio/codec/mixer_volumes_CHERRYPRO_ce.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_volumes_CHERRYPRO_cmcciot.xml:system/etc/audio/codec/mixer_volumes_CHERRYPRO_cmcciot.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_volumes_CHERRYPRO_normal.xml:system/etc/audio/codec/mixer_volumes_CHERRYPRO_normal.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_volumes_CHERRYPRO_telecomiot.xml:system/etc/audio/codec/mixer_volumes_CHERRYPRO_telecomiot.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_volumes_CHERRYPRO_unicomiot.xml:system/etc/audio/codec/mixer_volumes_CHERRYPRO_unicomiot.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_volumes_default.xml:system/etc/audio/codec/mixer_volumes_default.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_volumes_SHINE_ce.xml:system/etc/audio/codec/mixer_volumes_SHINE_ce.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_volumes_SHINE_cmcciot.xml:system/etc/audio/codec/mixer_volumes_SHINE_cmcciot.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_volumes_SHINE_normal.xml:system/etc/audio/codec/mixer_volumes_SHINE_normal.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_volumes_SHINE_telecomiot.xml:system/etc/audio/codec/mixer_volumes_SHINE_telecomiot.xml \
+		vendor/hi6210sft/etc/audio/codec/mixer_volumes_SHINE_unicomiot.xml:system/etc/audio/codec/mixer_volumes_SHINE_unicomiot.xml \
+		vendor/hi6210sft/etc/audio/codec/pop_seq_ALICE.xml:system/etc/audio/codec/pop_seq_ALICE.xml \
+		vendor/hi6210sft/etc/audio/codec/pop_seq_ALICEPA.xml:system/etc/audio/codec/pop_seq_ALICEPA.xml \
+		vendor/hi6210sft/etc/audio/codec/pop_seq_CARMEL.xml:system/etc/audio/codec/pop_seq_CARMEL.xml \
+		vendor/hi6210sft/etc/audio/codec/pop_seq_CHERRYPLUS.xml:system/etc/audio/codec/pop_seq_CHERRYPLUS.xml \
+		vendor/hi6210sft/etc/audio/codec/pop_seq_CHERRYPLUSGLOBAL.xml:system/etc/audio/codec/pop_seq_CHERRYPLUSGLOBAL.xml \
+		vendor/hi6210sft/etc/audio/codec/pop_seq_CHERRYPRO.xml:system/etc/audio/codec/pop_seq_CHERRYPRO.xml \
+		vendor/hi6210sft/etc/audio/codec/pop_seq_default.xml:system/etc/audio/codec/pop_seq_default.xml \
+		vendor/hi6210sft/etc/audio/codec/pop_seq_SHINE.xml:system/etc/audio/codec/pop_seq_SHINE.xml \
+		vendor/hi6210sft/etc/audio/dts/dts_ALICE_normal.xml:system/etc/audio/dts/dts_ALICE_normal.xml \
+		vendor/hi6210sft/etc/audio/dts/dts_ALICEPA_normal.xml:system/etc/audio/dts/dts_ALICEPA_normal.xml \
+		vendor/hi6210sft/etc/audio/dts/dts_CARMEL_normal.xml:system/etc/audio/dts/dts_CARMEL_normal.xml \
+		vendor/hi6210sft/etc/audio/dts/dts_CHERRYPLUS_normal.xml:system/etc/audio/dts/dts_CHERRYPLUS_normal.xml \
+		vendor/hi6210sft/etc/audio/dts/dts_CHERRYPLUSGLOBAL_normal.xml:system/etc/audio/dts/dts_CHERRYPLUSGLOBAL_normal.xml \
+		vendor/hi6210sft/etc/audio/dts/dts_CHERRYPRO_normal.xml:system/etc/audio/dts/dts_CHERRYPRO_normal.xml \
+		vendor/hi6210sft/etc/audio/dts/dts_default.xml:system/etc/audio/dts/dts_default.xml \
+		vendor/hi6210sft/etc/audio/dts/dts_SHINE_normal.xml:system/etc/audio/dts/dts_SHINE_normal.xml \
+		vendor/hi6210sft/etc/audio/mbdrc/mbdrc_ALICE_normal.xml:system/etc/audio/mbdrc/mbdrc_ALICE_normal.xml \
+		vendor/hi6210sft/etc/audio/mbdrc/mbdrc_ALICEPA_normal.xml:system/etc/audio/mbdrc/mbdrc_ALICEPA_normal.xml \
+		vendor/hi6210sft/etc/audio/mbdrc/mbdrc_CARMEL_normal.xml:system/etc/audio/mbdrc/mbdrc_CARMEL_normal.xml \
+		vendor/hi6210sft/etc/audio/mbdrc/mbdrc_CHERRYPLUS_normal.xml:system/etc/audio/mbdrc/mbdrc_CHERRYPLUS_normal.xml \
+		vendor/hi6210sft/etc/audio/mbdrc/mbdrc_CHERRYPLUSGLOBAL_normal.xml:system/etc/audio/mbdrc/mbdrc_CHERRYPLUSGLOBAL_normal.xml \
+		vendor/hi6210sft/etc/audio/mbdrc/mbdrc_CHERRYPRO_normal.xml:system/etc/audio/mbdrc/mbdrc_CHERRYPRO_normal.xml \
+		vendor/hi6210sft/etc/audio/mbdrc/mbdrc_default.xml:system/etc/audio/mbdrc/mbdrc_default.xml \
+		vendor/hi6210sft/etc/audio/mbdrc/mbdrc_SHINE_normal.xml:system/etc/audio/mbdrc/mbdrc_SHINE_normal.xml \
+		vendor/hi6210sft/etc/audio/modem/modem_ALICE_cmcciot.xml:system/etc/audio/modem/modem_ALICE_cmcciot.xml \
+		vendor/hi6210sft/etc/audio/modem/modem_ALICE_normal.xml:system/etc/audio/modem/modem_ALICE_normal.xml \
+		vendor/hi6210sft/etc/audio/modem/modem_ALICE_telecomiot.xml:system/etc/audio/modem/modem_ALICE_telecomiot.xml \
+		vendor/hi6210sft/etc/audio/modem/modem_ALICE_unicomiot.xml:system/etc/audio/modem/modem_ALICE_unicomiot.xml \
+		vendor/hi6210sft/etc/audio/modem/modem_ALICEPA_cmcciot.xml:system/etc/audio/modem/modem_ALICEPA_cmcciot.xml \
+		vendor/hi6210sft/etc/audio/modem/modem_ALICEPA_normal.xml:system/etc/audio/modem/modem_ALICEPA_normal.xml \
+		vendor/hi6210sft/etc/audio/modem/modem_ALICEPA_telecomiot.xml:system/etc/audio/modem/modem_ALICEPA_telecomiot.xml \
+		vendor/hi6210sft/etc/audio/modem/modem_ALICEPA_unicomiot.xml:system/etc/audio/modem/modem_ALICEPA_unicomiot.xml \
+		vendor/hi6210sft/etc/audio/modem/modem_CARMEL_cmcciot.xml:system/etc/audio/modem/modem_CARMEL_cmcciot.xml \
+		vendor/hi6210sft/etc/audio/modem/modem_CARMEL_normal.xml:system/etc/audio/modem/modem_CARMEL_normal.xml \
+		vendor/hi6210sft/etc/audio/modem/modem_CARMEL_telecomiot.xml:system/etc/audio/modem/modem_CARMEL_telecomiot.xml \
+		vendor/hi6210sft/etc/audio/modem/modem_CARMEL_unicomiot.xml:system/etc/audio/modem/modem_CARMEL_unicomiot.xml\
+		vendor/hi6210sft/etc/audio/modem/modem_CHERRYPLUS_cmcciot.xml:system/etc/audio/modem/modem_CHERRYPLUS_cmcciot.xml \
+		vendor/hi6210sft/etc/audio/modem/modem_CHERRYPLUS_normal.xml:system/etc/audio/modem/modem_CHERRYPLUS_normal.xml\
+		vendor/hi6210sft/etc/audio/modem/modem_CHERRYPLUS_telecomiot.xml:system/etc/audio/modem/modem_CHERRYPLUS_telecomiot.xml \
+		vendor/hi6210sft/etc/audio/modem/modem_CHERRYPLUS_unicomiot.xml:system/etc/audio/modem/modem_CHERRYPLUS_unicomiot.xml \
+		vendor/hi6210sft/etc/audio/modem/modem_CHERRYPLUSGLOBAL_cmcciot.xml:system/etc/audio/modem/modem_CHERRYPLUSGLOBAL_cmcciot.xml \
+		vendor/hi6210sft/etc/audio/modem/modem_CHERRYPLUSGLOBAL_normal.xml:system/etc/audio/modem/modem_CHERRYPLUSGLOBAL_normal.xml \
+		vendor/hi6210sft/etc/audio/modem/modem_CHERRYPLUSGLOBAL_telecomiot.xml:system/etc/audio/modem/modem_CHERRYPLUSGLOBAL_telecomiot.xml \
+		vendor/hi6210sft/etc/audio/modem/modem_CHERRYPLUSGLOBAL_telecomiot.xml:system/etc/audio/modem/modem_CHERRYPLUSGLOBAL_telecomiot.xml \
+		vendor/hi6210sft/etc/audio/modem/modem_CHERRYPRO_cmcciot.xml:system/etc/audio/modem/modem_CHERRYPRO_cmcciot.xml \
+		vendor/hi6210sft/etc/audio/modem/modem_CHERRYPRO_normal.xml:system/etc/audio/modem/modem_CHERRYPRO_normal.xml \
+		vendor/hi6210sft/etc/audio/modem/modem_CHERRYPRO_telecomiot.xml:system/etc/audio/modem/modem_CHERRYPRO_telecomiot.xml \
+		vendor/hi6210sft/etc/audio/modem/modem_CHERRYPRO_unicomiot.xml:system/etc/audio/modem/modem_CHERRYPRO_unicomiot.xml \
+		vendor/hi6210sft/etc/audio/modem/modem_default.xml:system/etc/audio/modem/modem_default.xml \
+		vendor/hi6210sft/etc/audio/modem/modem_SHINE_cmcciot.xml:system/etc/audio/modem/modem_SHINE_cmcciot.xml \
+		vendor/hi6210sft/etc/audio/modem/modem_SHINE_normal.xml:system/etc/audio/modem/modem_SHINE_normal.xml \
+		vendor/hi6210sft/etc/audio/modem/modem_SHINE_telecomiot.xml:system/etc/audio/modem/modem_SHINE_telecomiot.xml \
+		vendor/hi6210sft/etc/audio/modem/modem_SHINE_unicomiot.xml:system/etc/audio/modem/modem_SHINE_unicomiot.xml \
+		vendor/hi6210sft/etc/audio/nxp/Tfa9895_ALICEPA.cnt:system/etc/audio/nxp/Tfa9895_ALICEPA.cnt \
+		vendor/hi6210sft/etc/audio/nxp/Tfa9895_ALICEPA_coefficient.config:system/etc/audio/nxp/Tfa9895_ALICEPA_coefficient.config \
+	    vendor/hi6210sft/etc/audio/nxp/Tfa9895_default.cnt:system/etc/audio/nxp/Tfa9895_default.cnt \
+		vendor/hi6210sft/etc/audio/sws/sws_ALICE_normal.xml:system/etc/audio/sws/sws_ALICE_normal.xml \
+		vendor/hi6210sft/etc/audio/sws/sws_ALICEPA_normal.xml:system/etc/audio/sws/sws_ALICEPA_normal.xml \
+		vendor/hi6210sft/etc/audio/sws/sws_CARMEL_normal.xml:system/etc/audio/sws/sws_CARMEL_normal.xml\
+		vendor/hi6210sft/etc/audio/sws/sws_CHERRYPLUS_normal.xml:system/etc/audio/sws/sws_CHERRYPLUS_normal.xml \
+		vendor/hi6210sft/etc/audio/sws/sws_CHERRYPLUSGLOBAL_normal.xml:system/etc/audio/sws/sws_CHERRYPLUSGLOBAL_normal.xml \
+		vendor/hi6210sft/etc/audio/sws/sws_CHERRYPRO_normal.xml:system/etc/audio/sws/sws_CHERRYPRO_normal.xml \
+		vendor/hi6210sft/etc/audio/sws/sws_default.xml:system/etc/audio/sws/sws_default.xml \
+		vendor/hi6210sft/etc/audio/sws/sws_SHINE_normal.xml:system/etc/audio/sws/sws_SHINE_normal.xml
 #OMX & k3 Codecs
 #PRODUCT_COPY_FILES += \
 		vendor/lib/lib_k3_ffmpeg.so:system/lib/lib_k3_ffmpeg.so \
@@ -249,7 +367,19 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 		vendor/hi6210sft/lib64/libwifipro.so:system/lib64/libwifipro.so \
 		vendor/hi6210sft/lib64/libwpa_client_hisi.so:system/lib64/libwpa_client_hisi.so \
-		vendor/hi6210sft/lib/libwpa_client_hisi.so:system/lib/libwpa_client_hisi.so
+		vendor/hi6210sft/lib/libwpa_client_hisi.so:system/lib/libwpa_client_hisi.so \
+		vendor/hi6210sft/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
+		vendor/hi6210sft/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
+		vendor/hi6210sft/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
+		vendor/hi6210sft/vendor/lib/libbt-vendor.so:system/vendor/lib/libbt-vendor.so \
+		vendor/hi6210sft/vendor/lib/libbt-vendor-hi110x.so:system/vendor/lib/libbt-vendor-hi110x.so \
+		vendor/hi6210sft/vendor/lib/libcalmodule_akm.so:system/vendor/lib/libcalmodule_akm.so \
+		vendor/hi6210sft/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
+		vendor/hi6210sft/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
+		vendor/hi6210sft/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
+		vendor/hi6210sft/vendor/lib64/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib64/mediadrm/libdrmclearkeyplugin.so \
+		vendor/hi6210sft/vendor/lib64/libbt-vendor-hi110x.so:system/vendor/lib64/libbt-vendor-hi110x.so \
+		vendor/hi6210sft/vendor/lib64/libcalmodule_akm.so:system/vendor/lib64/libcalmodule_akm.so
 
 #Wifi Config
 PRODUCT_COPY_FILES += \
@@ -261,24 +391,24 @@ PRODUCT_COPY_FILES += \
 
 #Firmware
 PRODUCT_COPY_FILES += \
-		vendor/hi6210sft/vendor/firmware/4343A0_001.001.034.0056.0193_ORC.hcd:system/vendor/firmware/4343A0_001.001.034.0056.0193_ORC.hcd\
-			vendor/hi6210sft/vendor/firmware/BCM4334B0_002.001.013.1554.1613_RC.hcd:system/vendor/firmware/BCM4334B0_002.001.013.1554.1613_RC.hcd\
-			vendor/hi6210sft/vendor/firmware/fw_bcm4343s_apsta_hw.bin:system/vendor/firmware/fw_bcm4343s_apsta_hw.bin\
-			vendor/hi6210sft/vendor/firmware/fw_bcm4343s_hw.bin:system/vendor/firmware/fw_bcm4343s_hw.bin\
-			vendor/hi6210sft/vendor/firmware/fw_bcm4343s_p2p_hw.bin:system/vendor/firmware/fw_bcm4343s_p2p_hw.bin\
-			vendor/hi6210sft/vendor/firmware/fw_bcm4343s_test_hw_apsta.bin:system/vendor/firmware/fw_bcm4343s_test_hw_apsta.bin\
-			vendor/hi6210sft/vendor/firmware/GNSS.bin:system/vendor/firmware/GNSS.bin\
-			vendor/hi6210sft/vendor/firmware/libpn547_fw.so:system/vendor/firmware/libpn547_fw.so\
-			vendor/hi6210sft/vendor/firmware/nvram4343s_hw.txt:system/vendor/firmware/nvram4343s_hw.txt\
-			vendor/hi6210sft/vendor/firmware/nvram_CHERRY_PLUS_TL00.txt:system/vendor/firmware/nvram_CHERRY_PLUS_TL00.txt\
-			vendor/hi6210sft/vendor/firmware/nvram_CHERRY_PLUS_TL20M.txt:system/vendor/firmware/nvram_CHERRY_PLUS_TL20M.txt\
-			vendor/hi6210sft/vendor/firmware/nvram_CHERRY_PLUS_UL00.txt:system/vendor/firmware/nvram_CHERRY_PLUS_UL00.txt\
+		        vendor/hi6210sft/vendor/firmware/4343A0_001.001.034.0056.0193_ORC.hcd:system/vendor/firmware/4343A0_001.001.034.0056.0193_ORC.hcd \
+			vendor/hi6210sft/vendor/firmware/BCM4334B0_002.001.013.1554.1613_RC.hcd:system/vendor/firmware/BCM4334B0_002.001.013.1554.1613_RC.hcd \
+			vendor/hi6210sft/vendor/firmware/fw_bcm4343s_apsta_hw.bin:system/vendor/firmware/fw_bcm4343s_apsta_hw.bin \
+			vendor/hi6210sft/vendor/firmware/fw_bcm4343s_hw.bin:system/vendor/firmware/fw_bcm4343s_hw.bin \
+			vendor/hi6210sft/vendor/firmware/fw_bcm4343s_p2p_hw.bin:system/vendor/firmware/fw_bcm4343s_p2p_hw.bin \
+			vendor/hi6210sft/vendor/firmware/fw_bcm4343s_test_hw_apsta.bin:system/vendor/firmware/fw_bcm4343s_test_hw_apsta.bin \
+			vendor/hi6210sft/vendor/firmware/GNSS.bin:system/vendor/firmware/GNSS.bin \
+			vendor/hi6210sft/vendor/firmware/libpn547_fw.so:system/vendor/firmware/libpn547_fw.so \
+			vendor/hi6210sft/vendor/firmware/nvram4343s_hw.txt:system/vendor/firmware/nvram4343s_hw.txt \
+			vendor/hi6210sft/vendor/firmware/nvram_CHERRY_PLUS_TL00.txt:system/vendor/firmware/nvram_CHERRY_PLUS_TL00.txt \
+			vendor/hi6210sft/vendor/firmware/nvram_CHERRY_PLUS_TL20M.txt:system/vendor/firmware/nvram_CHERRY_PLUS_TL20M.txt \
+			vendor/hi6210sft/vendor/firmware/nvram_CHERRY_PLUS_UL00.txt:system/vendor/firmware/nvram_CHERRY_PLUS_UL00.txt \
 			vendor/hi6210sft/vendor/firmware/RECOVER_DATA.bin:system/vendor/firmware/RECOVER_DATA.bin \
-			vendor/hi6210sft/vendor/firmware/sdio_cfg:system/vendor/firmware/sdio_cfg\
-			vendor/hi6210sft/vendor/firmware/SDIO_CMP.bin:system/vendor/firmware/SDIO_CMP.bin\
-			vendor/hi6210sft/vendor/firmware/SDIO_COD.bin:system/vendor/firmware/SDIO_COD.bin\
+			vendor/hi6210sft/vendor/firmware/sdio_cfg:system/vendor/firmware/sdio_cfg \
+			vendor/hi6210sft/vendor/firmware/SDIO_CMP.bin:system/vendor/firmware/SDIO_CMP.bin \
+			vendor/hi6210sft/vendor/firmware/SDIO_COD.bin:system/vendor/firmware/SDIO_COD.bin \
 			vendor/hi6210sft/vendor/firmware/sdio_recover_cfg:system/vendor/firmware/sdio_recover_cfg \
-			vendor/hi6210sft/vendor/firmware/SDIO_RW.bin:system/vendor/firmware/SDIO_RW.bin\
+			vendor/hi6210sft/vendor/firmware/SDIO_RW.bin:system/vendor/firmware/SDIO_RW.bin \
 			vendor/hi6210sft/vendor/firmware/SDIO_RW_ALICE_TL00_FEM.bin:system/vendor/firmware/SDIO_RW_ALICE_TL00_FEM.bin \
 			vendor/hi6210sft/vendor/firmware/SDIO_RW_ALICE_TL21_FEM.bin:system/vendor/firmware/SDIO_RW_ALICE_TL21_FEM.bin \
 			vendor/hi6210sft/vendor/firmware/SDIO_TBL.bin:system/vendor/firmware/SDIO_TBL.bin \
