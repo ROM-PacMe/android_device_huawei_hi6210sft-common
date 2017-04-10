@@ -1,6 +1,6 @@
 #################################################################################
 #
-#				Cherry Mini
+#					
 #			      Propietary Blobs
 #
 #################################################################################
@@ -10,25 +10,25 @@
 
 
 #Overlay
-#DEVICE_PACKAGE_OVERLAYS := device/HUAWEI/hi6210sft/overlay
+#DEVICE_PACKAGE_OVERLAYS := device/huawei/hi6210sft/overlay
 
 #Ramdisk
 PRODUCT_COPY_FILES += \
-		device/linaro/hi6210sft/rootdir/fstab.hi6210sft:root/fstab.hi6210sft \
-		device/linaro/hi6210sft/rootdir/init.connectivity.rc:root/init.connectivity.rc \
-		device/linaro/hi6210sft/rootdir/init.hi6210sft.rc:root/init.hi6210sft.rc \
-		device/linaro/hi6210sft/rootdir/init.hwconfig.rc:root/init.hwconfig.rc \
-		device/linaro/hi6210sft/rootdir/ueventd.hi6210sft.rc:root/ueventd.hi6210sft.rc \
-		device/linaro/hi6210sft/rootdir/init.hi6210sft.usb.rc:root/init.hi6210sft.usb.rc \
-		device/linaro/hi6210sft/rootdir/sbin/oeminfo_nvm_server:root/sbin/oeminfo_nvm_server \
-		device/linaro/hi6210sft/rootdir/sbin/volisnotd:root/sbin/volisnotd \
-		device/linaro/hi6210sft/rootdir/sbin/teecd:root/sbin/teecd
+		device/huawei/hi6210sft/rootdir/fstab.hi6210sft:root/fstab.hi6210sft \
+		device/huawei/hi6210sft/rootdir/init.connectivity.rc:root/init.connectivity.rc \
+		device/huawei/hi6210sft/rootdir/init.hi6210sft.rc:root/init.hi6210sft.rc \
+		device/huawei/hi6210sft/rootdir/init.hwconfig.rc:root/init.hwconfig.rc \
+		device/huawei/hi6210sft/rootdir/ueventd.hi6210sft.rc:root/ueventd.hi6210sft.rc \
+		device/huawei/hi6210sft/rootdir/init.hi6210sft.usb.rc:root/init.hi6210sft.usb.rc \
+		device/huawei/hi6210sft/rootdir/sbin/oeminfo_nvm_server:root/sbin/oeminfo_nvm_server \
+		device/huawei/hi6210sft/rootdir/sbin/volisnotd:root/sbin/volisnotd \
+		device/huawei/hi6210sft/rootdir/sbin/teecd:root/sbin/teecd
 
 #Audio Config
 PRODUCT_COPY_FILES += \
-vendor/etc/audio_effects.conf:system/etc/audio_effects.conf \
-vendor/etc/audio_policy.conf:system/etc/audio_policy.conf \
-device/linaro/hi6210sft/kernel:kernel
+		vendor/etc/audio_effects.conf:system/etc/audio_effects.conf \
+		vendor/etc/audio_policy.conf:system/etc/audio_policy.conf \
+		device/huawei/hi6210sft/kernel:kernel
 
 #Media codecs
 PRODUCT_COPY_FILES += \
@@ -57,7 +57,7 @@ PRODUCT_COPY_FILES += \
 		vendor/hi6210sft/lib64/egl/libGLES_mali.so:system/lib64/egl/libGLES_mali.so \
 		vendor/hi6210sft/lib64/egl/libGLES_android.so:system/lib64/egl/libGLES_android.so \
 		vendor/hi6210sft/lib64/hw/gralloc.hi6210sft.so:system/lib64/hw/gralloc.hi6210sft.so \
-                vendor/hi6210sft/lib/hw/gralloc.hi6210sft.so:system/lib/hw/gralloc.hi6210sft.so \
+        vendor/hi6210sft/lib/hw/gralloc.hi6210sft.so:system/lib/hw/gralloc.hi6210sft.so \
 		vendor/hi6210sft/lib/libion.so:system/lib/libion.so \
 		vendor/hi6210sft/lib64/libion.so:system/lib64/libion.so
 
@@ -106,7 +106,7 @@ PRODUCT_COPY_FILES += \
 		vendor/hi6210sft/etc/modemConfig/balong/basic_name:system/etc/modemConfig/balong/basic_name \
 		vendor/hi6210sft/etc/modemConfig/hids_ue_msg.cfg:system/etc/modemConfig/hids_ue_msg.cfg \
 		vendor/hi6210sft/etc/modemConfig/hua.cfg:system/etc/modemConfig/hua.cfg \
-		device/linaro/hi6210sft/etc/rild.rc:system/etc/init/rild.rc
+		device/huawei/hi6210sft/etc/rild.rc:system/etc/init/rild.rc
 
 #Audio Libs
 PRODUCT_COPY_FILES += \
