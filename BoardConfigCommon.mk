@@ -14,9 +14,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# inherit from the proprietary version
--include vendor/huawei/hi6210sft/BoardConfigVendor.mk
-
 VENDOR_PATH := device/huawei/hi6210sft
 
 # Audio
